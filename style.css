@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+
+body{
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.7), 
+        rgba(0, 0, 0, 0.7)
+      ), url(https://images.pexels.com/photos/12327601/pexels-photo-12327601.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    width: 100%;
+    height:100vh ;
+    background-position: center;
+    background-size: cover;
+}
+
+header{
+    background-color: rgb(0, 0, 0,0.7);
+    border-radius: 0 0 15px 15px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 35px 50px;
+    width: 100%;
+}
+header .logo{
+    color: white;
+    position: relative;
+    font-size: 2em;
+    pointer-events: none;
+}
+
+header div a{
+    position: relative;
+    color: beige;
+    padding: 5px 25px;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 10px;
+}
+header div a:hover{
+    background-color: yellow;
+    color: black;
+}
+
+.content{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.content h1{
+    font-size: 5em;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 1px #000000,0 0 2px #000000;
+}
+
+
+.content p{
+    margin: 30px;
+    width: 40%;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+.content button{
+   position: relative;
+   text-align: center;
+   width: 200px;
+   padding: 10px 0;
+   color: white;
+   border-radius: 40px;
+   border: solid 2px #ffffff;
+   margin: 0 5px;
+   font-size: 1.2em;
+   font-weight: bold;
+   background: transparent;
+   cursor: pointer;
+   overflow: hidden;
+   
+   
+}
+
+span{
+   width: 0%;
+   height: 100%;
+   position: absolute;
+   border-radius: 40px;
+   background: #9f0101;
+   left: 0;
+   bottom: 0;
+   z-index: -1;
+   transition: 0.5s;
+   
+}
+.content  button:hover span{
+    width: 100%;
+}
+.content .button button:hover{
+    border: none;
+}
